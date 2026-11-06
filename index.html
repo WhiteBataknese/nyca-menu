@@ -119,13 +119,12 @@ img{max-width:100%;display:block}
   filter:blur(2px);
 }
 .hero-img{
-  position:relative;width:min(460px,100%);
-  filter:drop-shadow(0 34px 26px rgba(0,0,0,.42));
-  animation:float 7s ease-in-out infinite;
+  position:relative;width:min(500px,100%);
 }
-@keyframes float{
-  0%,100%{transform:translateY(0) rotate(-1.2deg)}
-  50%{transform:translateY(-12px) rotate(-1.2deg)}
+.hero-panel{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr)}
+.hero-img.hero-collage{width:min(580px,108%);max-width:none;filter:none}
+@media (max-width:920px){
+  .hero-img.hero-collage{width:min(520px,100%);max-width:100%}
 }
 
 /* ============ sections ============ */
@@ -342,7 +341,7 @@ html.js .section.in{opacity:1;transform:none}
         </div>
       </div>
       <div class="hero-visual">
-        <img class="hero-img" src="assets/hero-indomie.webp" alt="Indomie goreng spesial NYCA" fetchpriority="high">
+        <img class="hero-img hero-collage" src="assets/hero-menu-collage.webp" alt="Hamparan hidangan khas NYCA: ayam, bebek, ikan, katsu, nasi goreng, mie, wings, dan rice bowl" fetchpriority="high">
       </div>
     </div>
   </header>
@@ -627,7 +626,7 @@ html.js .section.in{opacity:1;transform:none}
       <article class="dish-mini"><span class="mini-ico">🌶️</span><h3>Tahu Cabe Garam</h3><span class="price small">18K</span></article>
       <article class="dish-mini"><span class="mini-ico">🍠</span><h3>Singkong Goreng</h3><span class="price small">18K</span></article>
       <article class="dish-mini"><span class="mini-ico">🧅</span><h3>Bakwan</h3><span class="price small">18K</span></article>
-      <article class="dish-mini"><span class="mini-ico">🍯</span><h3>Banana Palm Sugar</h3><span class="price small">18K</span></article>
+      <article class="dish-mini"><span class="mini-ico">🍯</span><h3>Banana Palm Sugar</h3><span class="price small">20K</span></article>
       <article class="dish-mini"><span class="mini-ico">🧀</span><h3>Pisang Keju</h3><span class="price small">20K</span></article>
       <article class="dish-mini"><span class="mini-ico">🍟</span><h3>Kentang Goreng</h3><span class="price small">20K</span></article>
       <article class="dish-mini"><span class="mini-ico">🫘</span><h3>Tempe Mendoan</h3><span class="price small">20K</span></article>
