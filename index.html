@@ -249,22 +249,8 @@ main{padding-bottom:40px}
 .ddots{flex:1;border-bottom:2px dotted #DCD5C3;transform:translateY(-3px);min-width:14px}
 .drink .price{font-size:11.5px;padding:6px 10px}
 
-/* ============ add-ons ============ */
-.addons{
-  background:#fff;border:1px solid var(--line);border-radius:28px;
-  padding:clamp(24px,3vw,38px);display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;
-}
-.addons-copy{max-width:46ch}
-.addons-copy h2{margin:0 0 8px;font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,30px)}
-.addons-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
-.addon-row{display:flex;flex-wrap:wrap;gap:12px}
-.addon{
-  display:flex;align-items:center;gap:11px;background:var(--soft);
-  border:1px solid var(--line);border-radius:16px;padding:12px 15px;
-}
-.addon .mini-ico{width:40px;height:40px;background:#fff;font-size:19px}
-.addon h3{margin:0;font:600 14px/1.3 var(--sans)}
-.addon .price{margin-left:6px;font-size:12px;padding:7px 11px}
+/* ============ notes ============ */
+.note{margin:-14px 0 22px;color:var(--muted);font-size:14px;line-height:1.6}
 
 /* ============ footer ============ */
 .footer{
@@ -330,8 +316,8 @@ html.js .section.in{opacity:1;transform:none}
       <a class="chip" href="#mie-soto">Mie &amp; Soto</a>
       <a class="chip" href="#wings">Wings</a>
       <a class="chip" href="#cemilan">Cemilan</a>
-      <a class="chip" href="#minuman">Minuman</a>
       <a class="chip" href="#tambahan">Tambahan</a>
+      <a class="chip" href="#minuman">Minuman</a>
     </div>
   </div>
 </nav>
@@ -347,12 +333,12 @@ html.js .section.in{opacity:1;transform:none}
         <p class="hero-sub">Dari ayam goreng khas NYCA, patin bakar, rice bowl, sampai kopi susu andalan — semuanya tersaji dalam satu tampilan yang mudah dijelajahi.</p>
         <div class="hero-meta">
           <span class="hero-tag">Semua harga dalam ribuan rupiah (K)</span>
-          <span class="hero-tag">59 Hidangan &middot; 50 Minuman</span>
+          <span class="hero-tag">58 Hidangan &middot; 50 Minuman</span>
         </div>
         <div class="hero-stats">
           <div class="stat"><b>9</b><span>Kategori Makanan</span></div>
           <div class="stat"><b>7</b><span>Grup Minuman</span></div>
-          <div class="stat"><b>109</b><span>Total Pilihan</span></div>
+          <div class="stat"><b>108</b><span>Total Pilihan</span></div>
         </div>
       </div>
       <div class="hero-visual">
@@ -556,10 +542,6 @@ html.js .section.in{opacity:1;transform:none}
         <div class="dish-foot"><h3>Nasi Jeruk Kulit Crispy</h3><span class="price">25K</span></div>
       </article>
       <article class="dish">
-        <div class="dish-photo"><img loading="lazy" src="assets/heritage-nasi-ayam-sambal-dabu.webp" alt="Nasi Ayam Sambal Dabu-Dabu"></div>
-        <div class="dish-foot"><h3>Nasi Ayam Sambal Dabu-Dabu</h3><span class="price">28K</span></div>
-      </article>
-      <article class="dish">
         <div class="dish-photo"><img loading="lazy" src="assets/heritage-nasi-jeruk-ayam-bawang.webp" alt="Nasi Jeruk Ayam Bawang"></div>
         <div class="dish-foot"><h3>Nasi Jeruk Ayam Bawang</h3><span class="price">28K</span></div>
       </article>
@@ -654,10 +636,28 @@ html.js .section.in{opacity:1;transform:none}
     </div>
   </section>
 
-  <!-- ================= 10 MINUMAN ================= -->
-  <section class="section container" id="minuman">
+  <!-- ================= 10 TAMBAHAN ================= -->
+  <section class="section container" id="tambahan">
     <header class="head">
       <span class="num">10</span>
+      <div class="head-txt">
+        <p class="over">Extra Pleasures</p>
+        <h2>Tambahan Favorit</h2>
+      </div>
+      <span class="head-line"></span>
+    </header>
+    <p class="note">Bisa ditambahkan ke hidangan mana pun untuk melengkapi santapan Anda.</p>
+    <div class="grid grid-mini">
+      <article class="dish-mini"><span class="mini-ico">🍳</span><h3>Telur Mata Sapi</h3><span class="price small">5K</span></article>
+      <article class="dish-mini"><span class="mini-ico">🥚</span><h3>Telur Dadar</h3><span class="price small">5K</span></article>
+      <article class="dish-mini"><span class="mini-ico">🍚</span><h3>Nasi Putih</h3><span class="price small">5K</span></article>
+    </div>
+  </section>
+
+  <!-- ================= 11 MINUMAN ================= -->
+  <section class="section container" id="minuman">
+    <header class="head">
+      <span class="num">11</span>
       <div class="head-txt">
         <p class="over">NYCA.IDN Drinks &amp; Refreshments</p>
         <h2>Beverages Menu</h2>
@@ -765,22 +765,6 @@ html.js .section.in{opacity:1;transform:none}
         <div class="drink"><span class="drink-ico">🍯</span><span class="drink-name">Flavour Syrup</span><span class="ddots"></span><span class="price">3K</span></div>
         <div class="drink"><span class="drink-ico">🌾</span><span class="drink-name">Oat Milk</span><span class="ddots"></span><span class="price">3K</span></div>
         <div class="drink"><span class="drink-ico">💧</span><span class="drink-name">Air Mineral</span><span class="ddots"></span><span class="price">7K</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 11 TAMBAHAN ================= -->
-  <section class="section container" id="tambahan">
-    <div class="addons">
-      <div class="addons-copy">
-        <p class="over" style="margin:0 0 6px;font:700 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)">Extra Pleasures</p>
-        <h2>Tambahan Favorit</h2>
-        <p>Bisa ditambahkan ke hidangan mana pun untuk melengkapi santapan Anda.</p>
-      </div>
-      <div class="addon-row">
-        <div class="addon"><span class="mini-ico">🍳</span><h3>Telur Mata Sapi</h3><span class="price">5K</span></div>
-        <div class="addon"><span class="mini-ico">🥚</span><h3>Telur Dadar</h3><span class="price">5K</span></div>
-        <div class="addon"><span class="mini-ico">🍚</span><h3>Nasi Putih</h3><span class="price">5K</span></div>
       </div>
     </div>
   </section>

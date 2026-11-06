@@ -4,8 +4,8 @@ Menu digital modern untuk **NYCA**, dibangun sebagai satu halaman web statis (ta
 
 ## ✨ Fitur
 
-- **11 kategori** — 59 hidangan & 50 minuman
-- **32 foto hidangan** dengan latar transparan, diekstrak langsung dari menu PDF resmi
+- **11 kategori** — 58 hidangan & 50 minuman
+- **31 foto hidangan** dengan latar transparan, diekstrak langsung dari menu PDF resmi
 - **Navigasi sticky + scrollspy** untuk menjelajah antar kategori
 - **Tab filter minuman** — Kopi Susu, White, Black, Non Kopi, Refreshing Tea, Mocktail, Additional
 - **Responsif** — nyaman dibuka di HP, tablet, hingga layar display/TV
@@ -17,7 +17,7 @@ Menu digital modern untuk **NYCA**, dibangun sebagai satu halaman web statis (ta
 ```
 nyca-menu/
 ├── index.html        # Halaman menu (HTML + CSS + JS dalam satu file)
-└── assets/           # 32 foto hidangan (WebP, latar transparan)
+└── assets/           # 31 foto hidangan (WebP, latar transparan)
 ```
 
 ## ▶️ Menjalankan
